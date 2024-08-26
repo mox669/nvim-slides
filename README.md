@@ -28,6 +28,14 @@ Afterwards you can launch neovim as follows, to load the nvim-slides configurati
 
    NVIM_APPNAME=nvim-slides nvim
 ```
+### Capabilities
+- fullscreen mode via zen-mode
+- embed images into slides
+- ascii art with toilet for titles
+- place unicode charaters with custom snippets using LuaSnip
+- create diagrams with venn.nvim
+- colorizing text based on regexp matching in vim syntax files
+
 
 ### Terminal emulator
 
