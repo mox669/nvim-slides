@@ -1,3 +1,6 @@
+local api = vim.api
+local utils = require('mox.utils')
+
 return {
   'folke/zen-mode.nvim',
   opts = {
@@ -28,14 +31,8 @@ return {
         font = '+19', -- font size increment
       },
     },
-    on_open = function()
-      -- setup CursorMoved event
-      require('mox.utils').setup_augr()
-    end,
+    on_open = utils.handle_nvim_zen,
     -- callback where you can add custom code when the Zen window closes
-    on_close = function()
-      local api = vim.api
-      api.nvim_del_augroup_by_name('nvim-slides')
-    end,
+    on_close = utils.handle_nvim_zen,
   },
 }

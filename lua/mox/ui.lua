@@ -3,7 +3,8 @@ vim.cmd([[
     highlight Normal guibg=#ffffff guifg=#030303
     highlight LineNr guibg=#ffffff guifg=#030303
     highlight CursorLine guifg=#ffffff
-    highlight Cursor guibg=#000000
+    highlight CursorColumn guifg=#ffffff
+    highlight Cursor guibg=#ff631c
   endfunction
 
   augroup MoxHigh
